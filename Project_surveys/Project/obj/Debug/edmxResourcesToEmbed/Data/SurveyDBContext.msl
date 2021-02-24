@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="surveysdbModelStoreContainer" CdmEntityContainer="surveysdbEntities1">
+    <EntitySetMapping Name="answers">
+      <EntityTypeMapping TypeName="surveysdbModel.answers">
+        <MappingFragment StoreEntitySet="answers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="User_name" ColumnName="User_name" />
+          <ScalarProperty Name="Question_option_id" ColumnName="Question_option_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="input_types">
+      <EntityTypeMapping TypeName="surveysdbModel.input_types">
+        <MappingFragment StoreEntitySet="input_types">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Input_type_name" ColumnName="Input_type_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="option_choices">
+      <EntityTypeMapping TypeName="surveysdbModel.option_choices">
+        <MappingFragment StoreEntitySet="option_choices">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Question_id" ColumnName="Question_id" />
+          <ScalarProperty Name="Option_choices_name" ColumnName="Option_choices_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="questions">
+      <EntityTypeMapping TypeName="surveysdbModel.questions">
+        <MappingFragment StoreEntitySet="questions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Input_type_id" ColumnName="Input_type_id" />
+          <ScalarProperty Name="Surveys_id" ColumnName="Surveys_id" />
+          <ScalarProperty Name="Question_name" ColumnName="Question_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="surveys">
+      <EntityTypeMapping TypeName="surveysdbModel.surveys">
+        <MappingFragment StoreEntitySet="surveys">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="User_name" ColumnName="User_name" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Survey_code" ColumnName="Survey_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="text_answers">
+      <EntityTypeMapping TypeName="surveysdbModel.text_answers">
+        <MappingFragment StoreEntitySet="text_answers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="User_name" ColumnName="User_name" />
+          <ScalarProperty Name="Question_id" ColumnName="Question_id" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="surveysdbModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="User_name" ColumnName="User_name" />
+          <ScalarProperty Name="User_password" ColumnName="User_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
